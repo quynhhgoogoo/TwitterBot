@@ -1,0 +1,22 @@
+{
+    "name": "twitter_bot",
+    "version": "1.0.0",
+    "description": "demonstrating",
+    "main": "bot.js",
+    "scripts": {
+        "start": "node bot.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "TwitterBot"
+    },
+    "keywords": [
+        "cute"
+    ],
+    "author": "pretty gau",
+    "license": "ISC",
+    "dependencies": {
+        "twit": "^2.2.11"
+    }
+}
