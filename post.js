@@ -5,15 +5,20 @@ var config = require('./config');
 
 var T = new Twit(config);
 
-var post = {
-    status: 'Mina olen Gau'
-}
-T.post('statuses/update', post, tweets);
+setInterval(PosTweets, 1000 * 20);
 
-function tweets(err, data, response) {
-    if (err) {
-        console.log("Something went wrong");
-    } else {
-        console.log(data);
+function PosTweets() {
+    var r = Math.floor(Math.random() * 1000);
+    var post = {
+        status: 'Mina olen Gau ' + r
+    }
+    T.post('statuses/update', post, tweets);
+
+    function tweets(err, data, response) {
+        if (err) {
+            console.log("Something went wrong");
+        } else {
+            console.log(data);
+        }
     }
 }
