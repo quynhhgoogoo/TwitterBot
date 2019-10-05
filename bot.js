@@ -1,7 +1,7 @@
 console.log('The log is starting');
 
 var Twit = require('twit');
-var config = require('./config');
+var config = require('./config/config');
 
 var T = new Twit(config);
 var params = { q: 'justinbieber', count: 5 }
